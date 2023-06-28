@@ -1,0 +1,40 @@
+---
+export interface Props {
+	title: string;
+	body: string;
+	href: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+
+<div class="site-header">
+	<span class="site-title">Crash Course Programming</span>
+</div>
+<style>
+	@import url(https://fonts.bunny.net/css);
+
+  .site-header {
+    width: 100%;
+		height: 150px;
+		background-image: url("/logo_pile.png");
+		background-size: 200px 200px;
+		background-repeat: no-repeat;
+		background-color: black;
+		background-position-y: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		border-radius: 50% 10% / 40% 50%;
+  }
+	.site-title {
+		font-size: 36px;
+		color: #CCCCCC;
+		font-family: 'Finger Paint' sans-serif;
+	}
+
+	.site-logo {
+		height: 100px;
+	}
+</style>
