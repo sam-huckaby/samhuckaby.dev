@@ -3,33 +3,25 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Crash Course Programming">
 	<main>
-		<h1 class="marker-underline">Let's get <span class="text-gradient">Learning</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+		<h4>
+			I want to teach you how to program computers.
+		</h4>
+		<p>
+			In today's day and age it has never been easier to enter the world of computer programming. Pretty much every adult has a computer that is capable of writing some kind of computer code, even if it's an old laptop that you've had forever.
+		</p>
+		<p>
+			All you need is a desire to learn and a willingness to keep trying when you don't get it right away. There is no magic bullet. You will get frustrated - that's true no matter what you're learning. If you're willing to take on this challenge, then I want to come alongside you and help.
+		</p>
+		<p>
+			This site is designed to be a place where you can come to look for helpful information for your journey to becoming a computer programmer. I will be posting semi-regularly as I build more course material, and will be posting across various topics from computer science.
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="/example"
-				title="My Example"
-				body="Testing out a basic Markdown example."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+				href="/posts"
+				title="Head to the Blog"
+				body="Head over to the information you actually want."
 			/>
 		</ul>
 	</main>
@@ -42,12 +34,11 @@ import Card from '../components/Card.astro';
 		max-width: 60ch;
 	}
 	h1 {
-		font-size: 3rem;
-		font-weight: 800;
 		margin: 0;
 	}
 	.marker-underline {
 		border-bottom: 3px solid black;
+		border-top: 3px solid black;
 		border-radius: 50% 50% / 50% 30%;
 	}
 	.text-gradient {
@@ -78,7 +69,7 @@ import Card from '../components/Card.astro';
 	}
 	.link-card-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		grid-template-columns: repeat(auto-fit);
 		gap: 1rem;
 		padding: 0;
 	}

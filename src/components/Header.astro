@@ -9,10 +9,16 @@ const { href, title, body } = Astro.props;
 ---
 
 <div class="site-header">
+<div class="header-container">
 	<span class="site-title">Crash Course Programming</span>
+	<span class="site-tagline">By Sam Huckaby</span>
 </div>
 <style>
-	@import url(https://fonts.bunny.net/css);
+	.header-container {
+		max-width: 60ch;
+		display: flex;
+		flex-direction: column;
+	}
 
   .site-header {
     width: 100%;
@@ -23,15 +29,21 @@ const { href, title, body } = Astro.props;
 		background-color: black;
 		background-position-y: center;
 		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
+		flex-direction: column;
+		justify-content: center;
 		align-items: center;
-		border-radius: 50% 10% / 40% 50%;
+		/* border-radius: 50% 10% / 40% 50%; */
   }
 	.site-title {
+		max-width: 60ch;
 		font-size: 36px;
 		color: #CCCCCC;
-		font-family: 'Finger Paint' sans-serif;
+		font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	}
+
+	.site-tagline {
+		color: #f97316;
+		align-self: end;
 	}
 
 	.site-logo {
