@@ -1,12 +1,12 @@
 ---
-title: 'My First Blog Post'
-pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
+title: 'Data Structures in Computer Science'
+pubDate: 2023-07-01
+description: 'A recap of a 5-Minute Fundamental overview of data structures.'
+author: 'Sam Huckaby'
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png' 
-    alt: 'The full Astro logo.'
-tags: ["astro", "blogging", "learning in public"]
+    url: '/logo_pile.png' 
+    alt: 'The Crash Course Pile.'
+tags: ["computer science", "data structures", "learning in public"]
 ---
 
 # Data Structures in Computer Programming
