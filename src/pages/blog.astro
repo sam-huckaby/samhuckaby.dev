@@ -4,10 +4,9 @@ import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 
-const callToAction = "I want to teach you how to program computers";
+const callToAction = "Most Recent Posts";
 const ctaStyles = "font-bold mb-4";
-
-// Following https://docs.astro.build/en/tutorial/2-pages/2/
+const allPosts = await Astro.glob('../pages/posts/*.md');
 
 ---
 
@@ -16,21 +15,13 @@ const ctaStyles = "font-bold mb-4";
 		<h4 class={ctaStyles}>
 			{callToAction}
 		</h4>
-		<p class="mb-4">
-			In today's day and age it has never been easier to enter the world of computer programming. Pretty much every adult has a computer that is capable of writing some kind of computer code, even if it's an old laptop that you've had forever.
-		</p>
-		<p class="mb-4">
-			All you need is a desire to learn and a willingness to keep trying when you don't get it right away. There is no magic bullet. You will get frustrated - that's true no matter what you're learning. If you're willing to take on this challenge, then I want to come alongside you and help.
-		</p>
-		<p class="mb-4">
-			This site is designed to be a place where you can come to look for helpful information for your journey to becoming a computer programmer. I will be posting semi-regularly as I build more course material, and will be posting across various topics from computer science.
-		</p>
 		<ul role="list" class="link-card-grid">
-			<Card
-				href="/blog"
-				title="Head to the Blog"
-				body="Head over to the information you actually want."
-			/>
+    {allPosts.map((post) => (<li><Card
+				href={post.url}
+				title={post.frontmatter.title}
+				body={post.frontmatter.description}
+			/></li>))}
+			
 		</ul>
 	</main>
 </Layout>
