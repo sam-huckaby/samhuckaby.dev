@@ -9,7 +9,7 @@ import Header from "../components/Header.astro";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark:bg-neutral-900 dark:text-neutral-300">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={frontmatter.description}>
@@ -22,7 +22,7 @@ import Header from "../components/Header.astro";
 	</head>
 	<body class="flex flex-col items-center">
 		<Header />
-    <div class="prose m-4 flex flex-col">
+    <div class="prose dark:prose-invert m-4 flex flex-col">
       <a class="cursor-pointer underline" target="_blank" href={frontmatter.youtube}>Watch the video on YouTube</a>
       <slot />
     </div>
