@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/postLayout.astro
 title: '5-Minute Fundamentals: Programming Languages'
 pubDate: 2023-06-28
 description: 'A recap of a 5-Minute Fundamental overview of programming languages.'
