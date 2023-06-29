@@ -4,6 +4,7 @@ title: '5-Minute Fundamentals: Variables'
 pubDate: 2023-06-28
 description: 'A recap of a 5-Minute Fundamental overview of variables.'
 author: 'Sam Huckaby'
+youtube: 'https://youtu.be/lU1GhpG4uMw'
 image:
     url: '/logo_pile.png' 
     alt: 'The Crash Course Pile.'

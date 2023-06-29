@@ -9,10 +9,12 @@ const { href, title, body } = Astro.props;
 ---
 
 <div class="site-header">
-<div class="header-container">
-	<span class="site-title">Crash Course Programming</span>
-	<span class="site-tagline">By Sam Huckaby</span>
-</div>
+<a href="/">
+	<div class="md:max-w-[60ch] max-w-[30ch] flex flex-col items-center justify-center drop-shadow-[0_2px_2px_rgba(0,0,0.8)]">
+		<span class="site-title">Crash Course Programming</span>
+		<span class="site-tagline">By Sam Huckaby</span>
+	</div>
+</a>
 <style>
 	.header-container {
 		max-width: 60ch;

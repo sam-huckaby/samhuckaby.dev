@@ -10,18 +10,23 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
 
 ---
 
-<Layout title="Crash Course Programming">
+<Layout title="Crash Course Blog">
 	<main>
 		<h4 class={ctaStyles}>
 			{callToAction}
 		</h4>
 		<ul role="list" class="link-card-grid">
-    {allPosts.map((post) => (<li><Card
-				href={post.url}
-				title={post.frontmatter.title}
-				body={post.frontmatter.description}
-			/></li>))}
-			
+    {
+        allPosts.map((post) => (
+          <li>
+            <Card
+              href={post.url}
+              title={post.frontmatter.title}
+              body={post.frontmatter.description}
+            />
+          </li>
+        ))
+      }
 		</ul>
 	</main>
 </Layout>
