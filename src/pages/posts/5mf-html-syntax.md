@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/post.layout.astro
 title: '5-Minute Fundamentals: HTML Syntax'
-pubDate: 2023-07-01
+pubDate: 2023-07-02
 description: 'A recap of a 5-Minute Fundamental overview of HTML Syntax.'
 author: 'Sam Huckaby'
 youtube: 'https://youtu.be/zf-zPY1WWJY'
