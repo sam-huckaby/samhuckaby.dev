@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/Layout.astro
+layout: ../layouts/base.layout.astro
 title: "Data Structures"
 author: "Sam Huckaby"
 date: "28 June 2023"

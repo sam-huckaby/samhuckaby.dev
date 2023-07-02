@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/postLayout.astro
+layout: ../../layouts/post.layout.astro
 title: '5-Minute Fundamentals: Variables'
 pubDate: 2023-06-28
 description: 'A recap of a 5-Minute Fundamental overview of variables.'
@@ -8,10 +8,10 @@ youtube: 'https://youtu.be/lU1GhpG4uMw'
 image:
     url: '/logo_pile.png' 
     alt: 'The Crash Course Pile.'
-tags: ["computer science", "variables", "learning in public"]
+tags: ["5-minute-fundamentals"]
 ---
 
-# Understanding Variables in Programming: A Comprehensive Guide
+# 5-Minute Fundamentals: Understanding Variables in Programming
 
 Welcome to another educational installment from Five Minute Fundamentals. This time, we delve into the world of variables in programming. We will explore what variables are, why we use them, and how different programming languages handle them.
 

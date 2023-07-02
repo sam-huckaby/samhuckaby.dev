@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/postLayout.astro
+layout: ../../layouts/post.layout.astro
 title: '5-Minute Fundamentals: Programming Languages'
 pubDate: 2023-06-28
 description: 'A recap of a 5-Minute Fundamental overview of programming languages.'
@@ -8,7 +8,7 @@ youtube: 'https://youtu.be/RlRuk3wyEdo'
 image:
     url: '/logo_pile.png' 
     alt: 'The Crash Course Pile.'
-tags: ["computer science", "programming languages", "learning in public"]
+tags: ["5-minute-fundamentals"]
 ---
 
 # Five-minute Fundamentals: Understanding the Types and Uses of Programming Languages
