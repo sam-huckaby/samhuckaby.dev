@@ -8,9 +8,8 @@ const { title, frontmatter } = Astro.props;
 import Header from "../components/Header.astro";
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
-const t = useTranslations(lang);
-
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <!DOCTYPE html>
