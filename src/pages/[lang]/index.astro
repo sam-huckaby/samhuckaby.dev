@@ -1,0 +1,94 @@
+---
+import '../../styles/global.css';
+
+import Layout from '../../layouts/base.layout.astro';
+import Card from '../../components/Card.astro';
+import { languages } from '../../i18n/ui';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+export async function getStaticPaths() {
+  // Generate a list of currently valid language routes
+  const paths = Object.entries(languages).map(
+    ([lang, label]) => ({ params: { lang } })
+  );
+
+  return paths;
+}
+
+const ctaStyles = "font-bold mb-4 dark:underline";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title={t('header.pageTitle')}>
+	<main>
+		<h4 class={ctaStyles}>
+			{t('home.header')}
+		</h4>
+		<p class="mb-4">
+			{t('home.paragraph1')}
+		</p>
+		<p class="mb-4">
+			{t('home.paragraph2')}
+		</p>
+		<p class="mb-4">
+			{t('home.paragraph3')}
+		</p>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href={`/${lang}/blog`}
+				title={t('blog.linkTitle')}
+				body={t('blog.linkBody')}
+			/>
+		</ul>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		margin: 0;
+	}
+	.marker-underline {
+		border-bottom: 3px solid black;
+		border-top: 3px solid black;
+		border-radius: 50% 50% / 50% 30%;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit);
+		gap: 1rem;
+		padding: 0;
+	}
+</style>

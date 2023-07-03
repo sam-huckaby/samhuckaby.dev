@@ -6,7 +6,9 @@ export interface Props {
 const { title, frontmatter } = Astro.props;
 
 import Header from "../components/Header.astro";
-import { getLangFromUrl } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const t = useTranslations(lang);
 
 const lang = getLangFromUrl(Astro.url);
 ---
@@ -26,7 +28,8 @@ const lang = getLangFromUrl(Astro.url);
 	<body class="flex flex-col items-center">
 		<Header />
     <div class="prose dark:prose-invert m-4 flex flex-col">
-      <a class="cursor-pointer underline" target="_blank" href={frontmatter.youtube}>Watch the video on YouTube</a>
+			<!-- TODO: Conditionally hide if there is no YouTube video -->
+      <a class="cursor-pointer underline" target="_blank" href={frontmatter.youtube}>{t('post.watchYouTube')}</a>
       <slot />
     </div>
 	</body>

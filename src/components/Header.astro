@@ -7,8 +7,8 @@ const t = useTranslations(lang);
 ---
 
 <div class="site-header">
-<a href="/">
-	<div class="md:max-w-[60ch] max-w-[30ch] flex flex-col items-center justify-center drop-shadow-[0_2px_2px_rgba(0,0,0.8)]">
+<a href={`/${lang}/`}>
+	<div class="md:max-w-[60ch] max-w-[40ch] flex flex-col items-center justify-center drop-shadow-[0_2px_2px_rgba(0,0,0.8)] text-right">
 		<span class="site-title">{t('header.pageTitle')}</span>
 		<span class="site-tagline">{t('header.by')} {t('header.author')}</span>
 	</div>
