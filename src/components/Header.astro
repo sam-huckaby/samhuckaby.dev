@@ -1,18 +1,16 @@
 ---
-export interface Props {
-	title: string;
-	body: string;
-	href: string;
-}
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
-const { href, title, body } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 ---
 
 <div class="site-header">
 <a href="/">
 	<div class="md:max-w-[60ch] max-w-[30ch] flex flex-col items-center justify-center drop-shadow-[0_2px_2px_rgba(0,0,0.8)]">
-		<span class="site-title">Crash Course Programming</span>
-		<span class="site-tagline">By Sam Huckaby</span>
+		<span class="site-title">{t('header.pageTitle')}</span>
+		<span class="site-tagline">{t('header.by')} {t('header.author')}</span>
 	</div>
 </a>
 <style>

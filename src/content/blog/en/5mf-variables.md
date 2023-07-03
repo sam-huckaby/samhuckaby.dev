@@ -1,7 +1,8 @@
 ---
-layout: ../../layouts/post.layout.astro
+layout: ../../../layouts/post.layout.astro
 title: '5-Minute Fundamentals: Variables'
 pubDate: 2023-06-28
+date: 2023-06-28
 description: 'A recap of a 5-Minute Fundamental overview of variables.'
 author: 'Sam Huckaby'
 youtube: 'https://youtu.be/lU1GhpG4uMw'

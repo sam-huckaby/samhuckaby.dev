@@ -1,12 +1,23 @@
 ---
-import '../styles/global.css';
+import '../../styles/global.css';
 
-import Layout from '../layouts/base.layout.astro';
-import Card from '../components/Card.astro';
+import Layout from '../../layouts/base.layout.astro';
+import Card from '../../components/Card.astro';
+import { getCollection } from 'astro:content';
 
 const callToAction = "Most Recent Posts";
 const ctaStyles = "font-bold mb-4";
-const allPosts = await Astro.glob('../pages/posts/*.md');
+
+const posts = await getCollection('blog');
+
+const allPosts = posts.map((cur) => {
+	// I don't like this. This seems dumb. Why encode the lang like this??
+	const [lang, slug] = cur.slug.split('/');
+	return {
+		...cur,
+		url: `blog/${slug}`,
+	};
+});
 
 ---
 
@@ -21,8 +32,8 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
           <li>
             <Card
               href={post.url}
-              title={post.frontmatter.title}
-              body={post.frontmatter.description}
+              title={post.data.title}
+              body={post.data.author}
             />
           </li>
         ))

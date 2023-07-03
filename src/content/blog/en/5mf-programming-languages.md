@@ -1,7 +1,8 @@
 ---
-layout: ../../layouts/post.layout.astro
+layout: ../../../layouts/post.layout.astro
 title: '5-Minute Fundamentals: Programming Languages'
 pubDate: 2023-06-28
+date: 2023-06-28
 description: 'A recap of a 5-Minute Fundamental overview of programming languages.'
 author: 'Sam Huckaby'
 youtube: 'https://youtu.be/RlRuk3wyEdo'

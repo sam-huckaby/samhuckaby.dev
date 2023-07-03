@@ -1,7 +1,8 @@
 ---
-layout: ../../layouts/post.layout.astro
+layout: ../../../layouts/post.layout.astro
 title: '5-Minute Fundamentals: HTML Syntax'
 pubDate: 2023-07-02
+date: 2023-07-02
 description: 'A recap of a 5-Minute Fundamental overview of HTML Syntax.'
 author: 'Sam Huckaby'
 youtube: 'https://youtu.be/zf-zPY1WWJY'
@@ -10,6 +11,7 @@ image:
     alt: 'The Crash Course Pile.'
 tags: ["5-minute-fundamentals"]
 ---
+
 # 5-Minute Fundamentals: Introduction to HTML Syntax
 
 ![](https://cdn.videotap.com/LGGoI1jXU223Es8a7bvY-33.23.png)Welcome to a voyage into the fascinating world of HTML or Hypertext Markup Language. HTML is not just a series of arbitrary characters, but a rich language that is the cornerstone of the web. More akin to a templating language rather than a standard programming language, HTML imparts structure rather than logic. This post will serve as an in-depth primer on the essential stuff you need to start on the path of web development.
@@ -47,6 +49,7 @@ To draw an analogy, consider the page as a human body. The invisible metadata co
 A point to note is the importance of right nesting in HTML. A wrongly nested set like the one shown below can screw up the page display.
 
 ![](https://cdn.videotap.com/72J2pJ6ew1VtGLLF7uXb-273.png)```html
+
 <body>
     <p>Hello, world!</body></p>
 ```

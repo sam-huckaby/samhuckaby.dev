@@ -1,7 +1,8 @@
 ---
-layout: ../../layouts/post.layout.astro
+layout: ../../../layouts/post.layout.astro
 title: '5-Minute Fundamentals: HTML Syntax (Part 2)'
 pubDate: 2023-07-02
+date: 2023-07-02
 description: 'A recap of a 5-Minute Fundamental overview of HTML attributes and code assists.'
 author: 'Sam Huckaby'
 youtube: 'https://youtu.be/E7qkzut7io0'
@@ -10,6 +11,7 @@ image:
     alt: 'The Crash Course Pile.'
 tags: ["5-minute-fundamentals"]
 ---
+
 # 5-Minute Fundamentals: HTML Attributes, Code Cleanliness, and Built-In Browser Tools
 
 Welcome! Today we're going to delve deeper into HTML syntax, understanding its basic methodology, certain tools, and some good habits that can make it seem less intimidating. Even after learning the fundamentals of HTML syntax, it can still be a bit challenging to feel comfortable writing it. This sentiment is totally normal, especially if HTML is your first language or just your first templating languages.
