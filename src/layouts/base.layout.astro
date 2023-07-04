@@ -7,6 +7,7 @@ export interface Props {
 const { title, description } = Astro.props;
 
 import Header from "../components/Header.astro";
+import LanguagePicker from "../components/LanguagePicker.astro";
 import { getLangFromUrl } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
@@ -27,6 +28,7 @@ const lang = getLangFromUrl(Astro.url);
 	</head>
 	<body>
 		<Header />
+		<LanguagePicker />
 		<slot />
 	</body>
 </html>
